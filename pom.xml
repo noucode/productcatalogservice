@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.nouko</groupId>
 	<artifactId>productcatalogservice</artifactId>
-	<version>1.0.2</version>
+	<version>1.0.3-SNAPSHOT</version>
 	<name>productcatalogservice</name>
 	<description>Creating a Cloud Native RESTful Microservice With Spring Boot</description>
 	<url />
