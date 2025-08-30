@@ -6,19 +6,19 @@
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<!-- <version>3.5.4</version> -->
 		<version>3.2.5</version>
-		<relativePath /> <!-- lookup parent from repository -->
+		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.nouko</groupId>
 	<artifactId>productcatalogservice</artifactId>
 	<version>1.0.3</version>
 	<name>productcatalogservice</name>
 	<description>Creating a Cloud Native RESTful Microservice With Spring Boot</description>
-	<url />
+	<url/>
 	<licenses>
-		<license />
+		<license/>
 	</licenses>
 	<developers>
-		<developer />
+		<developer/>
 	</developers>
     <scm>
         <connection>scm:git:git@github.com:noucode/productcatalogservice.git</connection>
@@ -95,9 +95,35 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
-                <version>3.1.1</version>
+                <version>3.1.0</version>
             </plugin>
-           
+            
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-failsafe-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>integration-test</id>
+                        <phase>integration-test</phase>
+                        <goals>
+                            <goal>integration-test</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>verify</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>verify</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+		
 		</plugins>
 	</build>
 
