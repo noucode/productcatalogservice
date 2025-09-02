@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>com.nouko</groupId>
 	<artifactId>productcatalogservice</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<name>productcatalogservice</name>
 	<description>Creating a Cloud Native RESTful Microservice With Spring Boot</description>
 	<url />
@@ -23,7 +23,7 @@
         <connection>scm:git:https://github.com/noucode/productcatalogservice.git</connection>
         <developerConnection>scm:git:https://github.com/noucode/productcatalogservice.git</developerConnection>
         <url>scm:git:https://github.com/noucode/productcatalogservice.git</url>
-        <tag>productcatalogservice-1.0.0</tag>
+        <tag>HEAD</tag>
     </scm>
 	
 	<properties>
