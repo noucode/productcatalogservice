@@ -1,0 +1,11 @@
+server:
+  port: 8088
+  shutdown: graceful
+  tomcat:
+    connection-timeout: 5s
+    threads:
+      max: 100
+      min-spare: 10
+
+
+
